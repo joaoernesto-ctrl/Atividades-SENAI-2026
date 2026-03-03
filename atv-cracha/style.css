@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    background-color: #141414;
+    color: aliceblue;
+    font-family: 'Sometype Mono', sans-serif;
+    min-height: 95dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea, select{
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  color: aliceblue;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+select option {
+    background-color: rgb(20, 20, 20);
+}
+
+button {
+  padding-left: 10px;
+  border: 2px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  background-color: gray;
+  color: aliceblue;
+}
+
+button:hover {
+    background-color: rgb(20, 20, 20);
+    transition: 0.28s;
+    cursor: pointer;
+}
+
+.conteudo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+    width: 526px;
+    
+}
+
+.interface-container {
+    background-color: rgb(20, 20, 20);
+    border: 3px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 900px;
+    height: 500px;
+    padding: 40px 40px;
+}
+
+.cracha {
+    background-color: rgb(36, 36, 36);
+    width: 290px;
+    height: 420px;
+    border: 3px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.cracha h2 {
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Bruno Ace SC', sans-serif
+}
+.cracha h1 {
+    font-size: 24px
+}
+.texto {
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cracha img {
+    width: 170px;
+    filter: invert(1)
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="interface-container">
+            <section class="conteudo">
+              <div class="inputs">
+                <h3>Dados do Colaborador</h2>            
+                <input class="text" id="nome" placeholder="Nome Completo">
+                <input class="text" id="cargo" placeholder="Cargo">
+                <select name="departamento" id="departamento">
+                    <option value="1">Desenvolvimento</option>
+                    <option value="2">Design</option>
+                    <option value="3">Marketing</option>
+                </select>
+                <button type="button" id="gerar">Gerar Crachá</button>
+              </div>  
+              <section class="cracha">
+                <img src="img/SCP_Foundation_logo.svg.png">
+                <div class="texto">
+                <div>
+         <h2 id="departamentoC">Departamento</h2> </div>
+    <div>
+        <h1 id="nomeC">Nome</h1> </div>
+    <div>
+        <p id="cargoC">Cargo</p> </div>
+</div>
+                    </div>
+                </div>
+              </section>
+            </section>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
