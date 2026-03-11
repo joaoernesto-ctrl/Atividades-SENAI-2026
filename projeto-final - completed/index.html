@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Declaração do tipo de idioma da página. Bem fácil de mudar, eu espero... eu acho... é fácil né..? Deve ser fácil né? Nós ficamos um mês nessa UC, é fácil mudar o idioma... né? Muito fácil, certo? Certo?? Okay, vou porar. ...Mas, cara, é fácil né? Muito fácil né?-->
+<head> <!-- Cabeçalho da página, responsável pelos metadados!!!!! -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify – Web player: música para todas as pessoas</title>
+    <link rel="shortcut icon" href="img/Spotify-Page-Logo.png" type="image/x-icon"> <!-- Ícone da página, apracerá na aba do navegador. -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS, responsável por estilizar a página. (duh) -->
+</head>
+<body>
+    <header class="navbar"> <!-- Header principal, responsável por armazenar conteúdo como logotipo, area de busca, etc. -->
+        <section class="left"> <!-- Section que armazena a logo e está na esquerda do código. -->
+            <img src="img/Spotify-White.png" alt="Spotify">
+        </section>
+        <section class="center"> <!-- Armazena o símbolo de pág. principal, searchbar, e navegar. -->
+            <div class="home"> <!-- Página principal. -->
+                <img src="img/Home.svg">
+            </div>
+            <div class="junction"> <!-- Searchbar, onde o usuário pode pesquisar por músicas, artistas, álbuns, e playlists. -->
+                <img src="img/search-alt-1-svgrepo-com.svg" alt="Search">
+                <div class="search">
+                    <input type="text" id="search-input" placeholder="O que você deseja ouvir?">
+                </div>
+            </div>
+            <div class="navegar"> <!-- Navegar, existe para navegar entre generos musicais. -->
+                <img src="img/archive-svgrepo-com.svg" alt="Archive">
+            </div>
+        </section>
+        <section class="right"> <!-- Conteúdo da direita, armazena opções em formas de texto. -->
+            <div class="congregation">  <!-- Opções de Premium, Suporte, Baixar, Instalar o aplicativo, sign up, e log in.-->
+                <h4>Premium</h4>
+                <h4>Suporte</h4>
+                <h4>Baixar</h4>
+                <div class="divider"></div> <!-- Divisor estético. -->
+                <div class="instalar"> <!-- Opção para instalar o aplicativo. (duh) -->
+                    <img src="img/download-03-svgrepo-com.svg">
+                    <h5>Instalar app</h5>
+                </div>
+                <h5>Inscrever-se</h5>
+                <div class="login"> <!-- Botão de login. -->
+                    <h4 id="txt-no-transform">Entrar</h4>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <aside>
+            <section class="container-library"> <!-- Container do aside (biblioteca).-->
+                <div class="title">
+                    <h3>Sua Biblioteca</h3>
+                    <div class="create">
+                        <img src="img/plus-large-svgrepo-com.svg">
+                        <h5>Criar</h5>
+                    </div>
+                </div>
+            <section class="twin-boxes">
+                <div class="box">
+                    <h4>Crie sua primeira playlist</h4>
+                    <p>É fácil, vamos te ajudar.</p>
+                    <div class="create-aside">
+                        <h5>Criar playlist</h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4>Que tal seguir um podcast novo?</h4>
+                    <p>Avisaremos voce sobre novos episódios.</p>
+                    <div class="create-aside">
+                        <h5>Explore podcasts</h5>
+                    </div>
+                </div>             
+            </section>
+            <footer class="footer-aside"> <!-- Footer do ASIDE, não da página com um todo.-->
+                <div class="footer-links">
+                    <a id="legal" href="#">Legal</a>
+                    <a id="privacy" href="#">Segurança e Centro de privacidade</a>
+                    <a id="policy" href="#">Política de privacidade</a>
+                    <a id="cookies-minor" href="#">Cookies</a>
+                    <a id="ads" href="#">Sobre anúncios</a>
+                    <a id="accessibility" href="#">Acessibilidade</a><br>
+                    <a id="cookies-major" href="#">Cookies</a>
+                </div>
+                <div class="lang-button">
+                    <img src="img/globe-svgrepo-com.svg">
+                    <h5>Português do Brasil</h5>
+                </div>
+        </aside>
+        <article>
+            <section class="container-main"> <!-- Se explica automaticamente.-->
+                <div class="main-title">
+                    <h3>Músicas em alta</h3>
+                    <p>Mostrar tudo</p>
+                </div>
+                <div class="song-container"> <!-- Container das músicas -->
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/a0663928566_16.jpg">
+                        </div>
+                        <div class="play"> <!-- Botão de play, referencia-se com o CSS e JS-->
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Age of Excuse II</h4>
+                            <p>Mgła</p>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/somberlain.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>The Somberlain</h4>
+                            <p>Dissection</p>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/dayintonight.jpg">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Dream</h4>
+                            <p>Quo Vadis</p>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/818ZY+QY1oL._AC_UF1000,1000_QL80_.jpg">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Overlord</h4>
+                            <p>Skinless</p>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/a0736102743_5.jpg">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Exercises in Futility I</h4>
+                            <p>Mgła</p>
+                        </div>
+                    </div>
+                    <div class="song">
+                        <div class="song-img">
+                            <img src="albm-img/a1156098797_10.jpg">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Major Fuck Off</h4>
+                            <p>Livelover</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-title">
+                    <h3>Artistas populares</h3>
+                    <p>Mostrar tudo</p>
+                </div>
+                <div class="artist-container"> <!-- Mesma coisa do container de músicas. -->
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/suicidesilence.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Suicide Silence</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/mgla.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Mgła</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/lifelover.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Livelover</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/marduk.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Marduk</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/skinless.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Skinless</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                    <div class="artist">
+                        <div class="song-img">
+                            <img src="art-img/cryptopsy.png">
+                        </div>
+                        <div class="play">
+                            <img src="img/play-1001-svgrepo-com.svg">
+                        </div>
+                        <div class="song-info">
+                            <h4>Cryptopsy</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer-main"> <!-- Footer da página inteira. -->
+        <div class="text-space">
+            <h5>Testar o Premium de graça</h5>
+            <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <div class="signup">
+            <h4>Inscreva-se Grátis</h4>
+        </div>
+    </footer>
+    <script rel="script.js"></script> <!-- Link com o JS para a interatividade com o botão de play.-->
+</body>
+</html>

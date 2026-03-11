@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --primary-color: #ffffff;
+    --secondary-color: #b2b2b2;
+    --tertiary-color: #313131;
+    --menu-specific: #121212;
+    --library-btn-specific: #1F1F1F;
+    --specific-green: #1DB954;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    gap: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input, textarea, select, button {
+  appearance: none; 
+  -webkit-appearance: none;
+  width: 100%; 
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: none;
+
+}
+
+input::placeholder {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.junction:hover {
+    border: 1px solid var(--primary-color);
+    transition: 0.2s;
+    cursor: text;
+}
+
+.congregation h4:hover {
+    color: var(--primary-color);
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.congregation h5:hover, .instalar:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.create-aside:hover, .login:hover, .lang-button:hover, .home:hover, .navegar:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#txt-no-transform:hover {
+    color: var(--bg-color);
+    transform: scale(1);
+}
+
+.container-library {
+    background-color: var(--menu-specific);
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 690px;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px 20px;
+}
+
+.container-main {
+    background-color: var(--menu-specific);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 7px;
+    width: 1248px;
+    height: 690px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+article p {
+    color: var(--secondary-color);
+}
+
+.main-title {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 875px;
+}
+
+.main-title h3 {
+    font-size: 1.5rem;
+}
+
+.song-container, .artist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.song, .artist {
+    position: relative;
+    background-color: transparent;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.song:hover, .artist:hover {
+    background-color: var(--tertiary-color);
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.song-img img {
+    width: 160px;
+    border-radius: 10px;
+}
+
+.song-info h4, .song-info p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.song-info h4 {
+    color: var(--primary-color);
+}
+
+article p:hover, .song-info h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.artist-container img {
+    width: 160px;
+    border-radius: 100px;
+}
+
+.play {
+  position: absolute;
+  right: 20px;
+  bottom: 90px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--specific-green);
+  border-radius: 50%;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(20px); 
+  transition: all 0.3s ease;
+}
+
+.play.visible {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.play img {
+  width: 22px;
+  border-radius: 0px;
+}
+
+.song:hover .play, .artist:hover .play {
+  opacity: 1;
+  transform: translateY(0px); 
+}
+
+.junction {
+    padding-left: 12px;
+    border-radius: 100px;
+    background-color: var(--tertiary-color);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.junction img {
+    width: 20px;
+    filter: invert(0.7);
+}
+
+.junction img:hover {
+    cursor: pointer;
+}
+
+#search-input {
+    width: 310px;
+    height: 42px;
+    background-color: var(--tertiary-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+    font-family: 'DM Sans', sans-serif;
+    padding: 0px 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 34px;
+}
+
+.center {
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.home, .navegar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--tertiary-color);
+    border-radius: 50px;
+}
+
+.home img, .navegar img {
+    width: 20px;
+    filter: invert(0.7);
+}
+
+.congregation {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.divider {
+    width: 1px;
+    height: 22px;
+    background-color: var(--primary-color);
+}
+
+.instalar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--secondary-color);
+    gap: 5px;
+}
+.instalar img {
+    width: 20px;
+    filter: invert(0.7);
+}
+.login {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h4 {
+    font-weight: 800;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: var(--library-btn-specific);
+    color: var(--primary-color);
+}
+
+.create:hover {
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+    transition: 0.3s;
+}
+
+.create img {
+    width: 20px;
+    filter: invert(0.7);
+}
+
+.twin-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    padding: 0px 20px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    height: 160px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.box h4 {
+    margin-bottom: 0px;
+}
+
+.box p {
+    font-size: 0.85rem;
+}
+
+.create-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.footer-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 130px;
+}
+
+.footer-aside a {
+    padding-right: 20px;
+    font-size: 0.69rem;
+}
+
+a:link, a:visited {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#cookies-major {
+    color: var(--primary-color);
+    font-size: 0.725rem;
+}
+
+#cookies-major:hover {
+    text-decoration: underline;
+}
+
+.lang-button {
+    width: 170px;
+    height: 30px;
+    padding: 0px 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--primary-color);
+    gap: 7px;
+}
+
+.lang-button img {
+    width: 25px;
+    filter: invert(1);
+}
+
+.footer-main {
+    background: linear-gradient(90deg, #af2896 0%, #509bf5 100%);
+    height: 38px;
+    padding: 10px 17px;
+    margin: 7px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup {
+    background-color: var(--primary-color);
+    width: 188px;
+    height: 42px;
+    border-radius: 321437420484827px; /* Eu coloquei esse número absurdo pois estava com raiva, e — a partir de 50px — o item irá ficar redondo do mesmo jeito. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-space p, .text-space h5 {
+   margin: 0px; 
+   color: white;
+}
+
+.text-space p {
+    font-weight: 500;
+}
